@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Valdivian's login page. Here you can enter in your credentials and access Valdivian's application "
+    />
+    <link href="static/css/login-page.css" rel="stylesheet" />
+    <title>Valdivian | Login Page</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1 class="login-header">Welcome to Valdivian</h1>
+      <div class="login-form">
+        <form action="/login" method="POST">
+          <div class="login-username">
+            <input
+              id="username-input"
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+          <div class="login-password">
+            <input
+              id="password-input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <button class="css-button-gradient--4" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
